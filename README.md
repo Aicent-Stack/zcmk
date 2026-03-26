@@ -6,13 +6,13 @@ Nanosecond resource circulation engine. Zero-commission marketplace for global c
 
 ZCMK is **not** a traditional DePIN token, slow blockchain marketplace, or gas-guzzling smart-contract layer. It is a purpose-built, nanosecond-resolution circulatory system that treats every RTTP Pulse Frame as a living blood cell — carrying compute demand, supply bids, and instant settlement tokens — while maintaining perfect **Economic Homeostasis** across 42k+ heterogeneous nodes.
 
-This is the exact engine that powers 8.5M daily tasks today with 85% cost reduction and <10 ms end-to-end settlement. Every pulse is self-billed, self-matched, and self-settled at wire speed — no middlemen, no gas fees, no anemic latency.
+This is the exact engine that powers 8.5M daily tasks today with 85% cost reduction and <1 ms end-to-end settlement. Every pulse is self-billed, self-matched, and self-settled at wire speed — no middlemen, no gas fees, no anemic latency.
 
 ### 1. Core Innovations That Create Economic Homeostasis
 
 | Traditional DePIN Weakness       | Anemic Blockchain Approach          | ZCMK Countermeasure                              | Measured Gain                     |
 |----------------------------------|-------------------------------------|--------------------------------------------------|-----------------------------------|
-| Slow settlements (seconds–minutes) | On-chain gas + finality delays     | Nanosecond off-chain matching + hybrid L2 settle | <10 ms finality                  |
+| Slow settlements (seconds–minutes) | On-chain gas + finality delays     | Nanosecond off-chain matching + hybrid L2 settle | <1 ms finality                  |
 | Middlemen & leakage              | DEX routers / relayers              | Embedded RTBA in every Pulse Frame              | 100 % direct peer-to-peer        |
 | Value leakage (fees)             | 0.3–2 % gas + platform cuts         | Zero-commission (baked into header)             | 85 % lower cost                  |
 | Supply/demand imbalance          | Static staking / bonding            | Real-time micro-auctions with predictive homeostasis | 99.8 % resource utilization     |
