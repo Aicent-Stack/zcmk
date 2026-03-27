@@ -1,7 +1,8 @@
-// zcmk-blood/src/circulatory.rs — the value-carrying circulatory system
+// Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
 // Domain: ZCMK.com
-// Purpose: Nanosecond compute auctions (RTBA) & 0.00% commission settlement.
+// Purpose: Nanosecond resource circulation & 0.00% commission compute auctions.
 // Status: RFC-004 Draft.
+// zcmk-blood/src/circulatory.rs — the value-carrying circulatory system
 
 use std::sync::atomic::{AtomicU128, Ordering};
 use crossbeam_queue::ArrayQueue;
