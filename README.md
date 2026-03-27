@@ -2,13 +2,12 @@
 
 # zcmk — The Blood of Aicent Stack
  ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
- 
 <p align="left">
   <code> 🛠️ Build: Passing </code> &nbsp; 
   <code> 🦀 Language: Rust </code> &nbsp; 
   <code> 🛡️ Status: EVOLVING </code>
-</p>
-![ZCMK Heart Pulse](https://github.com/Aicent-Stack/.github/blob/48e9893946acd38ec559c10ccd38b313ea038712/ZCMK.jpg)
+</p> 
+![Aicent](https://github.com/user-attachments/assets/ca3613b6-fa08-4d43-b3b1-01adbcc3463c)
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 
 **Live Dissection: ZCMK.com — The Blood**  
