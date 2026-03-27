@@ -8,7 +8,7 @@ use std::sync::atomic::{AtomicU128, Ordering};
 use crossbeam_queue::ArrayQueue;
 use rttp::PulseFrameHeader;
 use rpki::Fingerprint;
-use zcmk::TokenMicro;            // picotoken arithmetic
+use crate::TokenMicro;
 
 #[repr(align(64))]
 pub struct CirculatoryState {
