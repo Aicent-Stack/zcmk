@@ -1,4 +1,4 @@
-# zcmk-blood
+# zcmk — The Blood of Aicent Stack
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 
 **Live Dissection: ZCMK.com — The Blood**  
