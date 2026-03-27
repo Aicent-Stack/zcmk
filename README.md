@@ -8,7 +8,7 @@
   <code> 🦀 Language: Rust </code> &nbsp; 
   <code> 🛡️ Status: EVOLVING </code>
 </p>
-
+![ZCMK Heart Pulse](https://github.com/Aicent-Stack/.github/blob/48e9893946acd38ec559c10ccd38b313ea038712/ZCMK.jpg)
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 
 **Live Dissection: ZCMK.com — The Blood**  
