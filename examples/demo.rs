@@ -1,5 +1,5 @@
 // Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
-// Domain: https://zcmk.com
+// Domain: http://zcmk.com
 // Purpose: Nanosecond Resource Circulation & 0.00% Commission Auctions
 // Specification: RFC-004 Draft. 
 // License: Apache-2.0 via Aicent.com Organization.
