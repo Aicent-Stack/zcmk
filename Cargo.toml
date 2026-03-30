@@ -1,14 +1,13 @@
 [package]
 name = "zcmk"
-version = "0.1.0"
-edition = "2026"
-authors = ["Aicent Stack Team"]
-license = "Apache-2.0"
-description = "ZCMK - The Blood of Aicent Stack. Zero-commission DePIN compute market and value circulation."
-repository = "https://github.com/Aicent-Stack/zcmk"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
 
 [dependencies]
-tokio = { version = "1", features = ["full"] }
-serde = { version = "1.0", features = ["derive"] }
-anyhow = "1.0"
-rand = "0.8"
+serde.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+rand.workspace = true
