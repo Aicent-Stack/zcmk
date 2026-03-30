@@ -1,5 +1,9 @@
-//! ZCMK Blood Demo
-//! Zero-commission DePIN computing power value transfer demonstration
+// Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
+// Domain: https://zcmk.com
+// Purpose: Nanosecond Resource Circulation & 0.00% Commission Auctions
+// Specification: RFC-004 Draft. 
+// License: Apache-2.0 via Aicent.com Organization.
+//! # RFC-004 Demo: Real-Time Bid/Ask Matrix & Value Flow
 
 use zcmk::circulatory::{ComputeNode, Market};
 
