@@ -2,6 +2,7 @@
 
 # 🟢 zcmk — The Blood of Aicent Stack
 ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
+
 **Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]**
 
 [![RFC](https://img.shields.io/badge/RFC-004-green.svg)](https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md)
