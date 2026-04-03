@@ -46,7 +46,7 @@ A lock-free, order-book-free matching engine running inside every node's semanti
 - **Resource Affinity:** Prioritizes nodes based on semantic similarity, energy cost, and ESG compliance.
 
 ### 3. Hive Metabolism (RFC-006 Integration)
-In Hive mode, ZCMK facilitates **Metabolic Load Balancing** across the [Aicent.net](https://aicent.net) grid. 
+In Hive mode, ZCMK facilitates **Metabolic Load Balancing** across the [Aicent.net](http://aicent.net) grid. 
 - **Credit Leasing:** High-resource nodes act as "Compute Motherships," fluidly transferring compute credits to low-energy units in real-time.
 - **Global Homeostasis:** Automates the clearing of compute-debts across the planetary operational grid to prevent node exhaustion.
 
