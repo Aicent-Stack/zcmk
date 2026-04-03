@@ -1,4 +1,4 @@
-**Aicent Stack • Sovereign AI Nervous System**
+Aicent Stack • Sovereign AI Nervous System
 
 # 🟢 zcmk — The Blood of Aicent Stack
 
@@ -16,13 +16,13 @@
 
 > *"Value is not a separate layer; it is the oxygen of intelligence. ZCMK doesn't just pay; it circulates life through the organism."*
 
-`zcmk` is the circulatory system of the **Aicent Stack**. It is a purpose-built, nanosecond-resolution value transport layer that treats every [RTTP](https://github.com/Aicent-Stack/rttp) Pulse Frame as a living blood cell — carrying compute demand, supply bids, and instant settlement tokens. By achieving **Economic Homeostasis**, it eliminates the "Middleman Tax" and ensures the organism's resources are perpetually balanced.
+`zcmk` is the circulatory system of the **Aicent Stack**. It is a purpose-built, nanosecond-resolution value transport layer designed for a **six-domain biological AI organism**. It treats every [RTTP](https://github.com/Aicent-Stack/rttp) Pulse Frame as a living blood cell — carrying compute demand, supply bids, and instant settlement tokens. By achieving **Economic Homeostasis**, it eliminates the "Middleman Tax" and ensures the organism's resources are perpetually balanced.
 
 ---
 
 ## 🩸 Achieving Economic Homeostasis (RFC-004)
 
-ZCMK replaces slow, gas-heavy blockchain marketplaces with an embedded, zero-commission settlement engine.
+ZCMK replaces slow, gas-heavy blockchain marketplaces with an embedded, zero-commission settlement engine that maintains systemic health.
 
 | Traditional DePIN | Legacy (Anemic Blockchain) | **ZCMK Countermeasure** | **Measured Gain** |
 | :--- | :--- | :--- | :--- |
@@ -35,22 +35,20 @@ ZCMK replaces slow, gas-heavy blockchain marketplaces with an embedded, zero-com
 
 ## 🔬 Core Circulatory Innovations
 
-### 1. Embedded Micro-Payments
+### 1. Embedded Micro-Payments (Picotoken Precision)
 ZCMK embeds the entire payment lifecycle directly into the **PulseFrameHeader**. 
-- **No External Wallet Calls:** The field `zcmk_bid: TokenMicro` (10⁻¹² precision) travels with the data pulse.
-- **Atomic Settlement:** Payments are matched and settled at the wire level before the AI inference is even executed.
-- **Hybrid Finality:** Nanosecond off-chain matching with batched on-chain ZK-proofs every 100ms.
+- **Atomic Clearing:** The field `zcmk_bid` (10⁻¹² precision) travels with the data pulse, enabling settlement at the exact moment of inference.
+- **Zero Friction:** No external wallet calls or gas fees; the value transfer is a native dimension of the neural impulse.
 
 ### 2. RTBA: The Real-Time Bid/Ask Engine
-The "Heart" of the bloodstream — a lock-free, order-book-free matching engine running inside every node's semantic router.
-- **Dynamic Matching:** Bids (Aicent Brain) and Asks (GTIOT Nodes) are matched using a **MatchScore** formula: 
-  *Score = (SupplyAffinity × PriceDelta) / (LatencyPenalty + EnergyCost)*
-- **Vectorized Scoring:** Matching happens in **< 50ns** per pulse using AVX-512 vectorized logic.
+A lock-free, order-book-free matching engine running inside every node's semantic router.
+- **Dynamic Scoring:** Matches bids (Aicent Brain) with asks (GTIOT Nodes) in **< 50ns** using AVX-512 vectorized logic.
+- **Resource Affinity:** Prioritizes nodes based on semantic similarity, energy cost, and ESG compliance.
 
-### 3. Zero-Commission Flow
-By making the [RTTP](https://github.com/Aicent-Stack/rttp) spine itself the marketplace, ZCMK reclaims 85% of legacy cloud costs.
-- **No Parasitic Fees:** Every token flows directly from the "Brain" to the "Body."
-- **Self-Billed Pulses:** Every pulse is self-contained, self-authenticating ([RPKI](https://github.com/Aicent-Stack/rpki)), and self-settled.
+### 3. Hive Metabolism (RFC-006 Integration)
+In Hive mode, ZCMK facilitates **Metabolic Load Balancing** across the [Aicent.net](https://aicent.net) grid. 
+- **Credit Leasing:** High-resource nodes act as "Compute Motherships," fluidly transferring compute credits to low-energy units in real-time.
+- **Global Homeostasis:** Automates the clearing of compute-debts across the planetary operational grid to prevent node exhaustion.
 
 ---
 
@@ -58,21 +56,21 @@ By making the [RTTP](https://github.com/Aicent-Stack/rttp) spine itself the mark
 
 Economic Homeostasis ensures the system's compute supply and demand stay in perfect balance, like blood pressure and oxygen saturation.
 
-1. **Demand Pulse:** [Aicent Brain](https://github.com/Aicent-Stack/aicent) emits a task with an embedded ZCMK bid.
-2. **Matching:** RTBA engine identifies the optimal [GTIOT](https://github.com/Aicent-Stack/gtiot) executor in <50ns.
-3. **Circulation:** Tokens flow back to the node as incentives, "feeding" the idle and "resting" the overworked.
+1. **Demand Emission:** [Aicent Brain](https://github.com/Aicent-Stack/aicent) emits a task with an embedded ZCMK bid.
+2. **RTBA Matching:** The engine identifies the optimal [GTIOT](https://github.com/Aicent-Stack/gtiot) executor within the [Hive](https://github.com/Aicent-Stack/aicent-net).
+3. **Value Circulation:** Tokens flow instantly to the node, "feeding" the idle and "resting" the overworked via automated resource accounting.
 
 ---
 
 ## 🚀 Quick Start: Testing the Blood Flow
 
-Experience the nanosecond micro-settlement by running the protocol demo:
+Experience nanosecond micro-settlement and economic homeostasis by running the v0.2.0 demo:
 
 ```bash
 git clone https://github.com/Aicent-Stack/aicent-demo.git
 cd aicent-demo
 
-# Run the dedicated Value (ZCMK) demo
+# Run the dedicated Value (ZCMK) v0.2.0 protocol suite
 cargo run --bin zcmk-demo
 ```
 
@@ -80,10 +78,13 @@ cargo run --bin zcmk-demo
 
 ## 📜 Technical Foundation
 
-Refer to the official [Genesis Manifesto](https://github.com/Aicent-Stack/manifesto) for deeper architectural insights:
-- **RFC-004 (Blood):** Zero-Commission Settlement.
-- **RFC-002 (Nerves):** Stateful Semantic Multicast.
-- **RFC-001 (Brain):** Sovereign Identity & Orchestration.
+Refer to the official [Genesis Manifesto](https://github.com/Aicent-Stack/manifesto) for the complete protocol suite:
+- **[RFC-001] Brain:** Sovereign Identity & Orchestration.
+- **[RFC-002] Nerves:** Stateful Semantic Multicast.
+- **[RFC-003] Immunity:** Parallel Tensor Watermarking.
+- **[RFC-004] Blood:** Zero-Commission Settlement.
+- **[RFC-005] Body:** Action-Collapse Framework.
+- **[RFC-006] Hive:** Global Operational Grid.
 
 ---
 © 2026 Aicent.com Organization. **SYSTEM STATUS: HOMEOTASIS**
