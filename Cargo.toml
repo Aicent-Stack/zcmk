@@ -1,13 +1,41 @@
 [package]
 name = "zcmk"
+description = "ZCMK: Real-Time Bid/Ask (RTBA) and Zero-Commission Settlement Protocol [RFC-004]"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
+homepage = "https://zcmk.com"
+documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
+keywords = ["fintech", "compute-market", "rfc-004", "zero-commission", "picotoken"]
+categories = ["data-structures", "network-programming", "algorithms"]
 
 [dependencies]
+# --- Core Organism Linking ---
+# Value flow is atomic with the Neural Pulse
+rttp.workspace = true
+aicent.workspace = true
+
+# --- High-Frequency RTBA Engine ---
+# Specialized for nanosecond-level matching scoring
+crossbeam-queue.workspace = true
+parking_lot.workspace = true   # Fast, hardware-aware synchronization
+num-traits = "0.2"             # Precision math for 10^-12 picotokens
+
+# --- Logic & Telemetry ---
 serde.workspace = true
 anyhow.workspace = true
-tokio.workspace = true
+tokio = { workspace = true, features = ["sync", "rt", "time"] }
 rand.workspace = true
+tracing.workspace = true      # Audit-grade financial telemetry
+
+[features]
+default = ["std"]
+std = ["serde/std", "anyhow/std"]
+# [RFC-004] Real-time Economic Homeostasis PID logic
+homeostasis = []
+
+[dev-dependencies]
+# Benchmarking the RTBA clearing latency
+criterion = "0.5"
