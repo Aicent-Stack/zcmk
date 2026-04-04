@@ -8,8 +8,10 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
+# 🛡️ Core fix: Removed aicent dependency
 rttp.workspace = true
-aicent.workspace = true
+
+# --- Primitives ---
 crossbeam-queue.workspace = true
 parking_lot.workspace = true
 serde.workspace = true
