@@ -6,40 +6,41 @@ edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
-homepage = "https://zcmk.com"
+homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
-keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis"]
-categories = ["financial-services", "algorithms", "network-programming"]
+keywords = ["sovereign-ai", "picotoken", "zero-commission", "rtba", "economic-homeostasis"]
+categories = ["financial-services", "algorithms", "distributed-computing"]
 rust-version = "1.75"
 
 [dependencies]
 # --- Core Organism Linking ---
-# ZCMK relies on the neural spine (RTTP) for atomic bid propagation
-rttp.workspace = true
-# Integration with Brain (RFC-001) for cognitive clearing feedback
-aicent.workspace = true
+# ZCMK is the blood of the organism; it clears value atomically with neural pulses.
+rttp = { workspace = true }
+aicent = { workspace = true }
 
 # --- HFT-Grade Matching Engine ---
-# [PERF] High-frequency lock-free primitives for nanosecond auctions
-crossbeam.workspace = true
-crossbeam-queue.workspace = true
-parking_lot.workspace = true   # [PERF] Faster, HFT-grade mutexes
-num-traits = "0.2"             # [FINANCE] Precision math for picotoken arithmetic
-once_cell.workspace = true     # Safe static initialization of auction state
+# [PERF] Lock-free primitives for nanosecond-speed auctions and settlements.
+crossbeam-queue = { workspace = true }
+parking_lot = { workspace = true } # HFT-grade synchronization for auction manifold
+once_cell = { workspace = true }   # Safe static initialization of the market 
+
+# --- Financial Precision ---
+# Precision math for 10^-12 (picotoken) granularity
+num-traits = { version = "0.2", default-features = false }
 
 # --- Logic & Telemetry ---
 serde = { workspace = true, features = ["derive"] }
-anyhow.workspace = true
+anyhow = { workspace = true }
 tokio = { workspace = true, features = ["sync", "rt"] }
-rand.workspace = true          # Chaos-testing the market pressure
-tracing.workspace = true       # Financial telemetry for audit trails
+rand = { workspace = true }        # Chaos-testing market price discovery
+tracing = { workspace = true }     # Financial audit trails
 
 [features]
 default = ["std"]
-std = ["serde/std", "anyhow/std"]
-# [RFC-006] Enable metabolic shunting for Hive-scale rebalancing
+std = ["serde/std", "anyhow/std", "rttp/std"]
+# [RFC-006] Enable metabolic shunting across the global operational grid
 hive-metabolism = []
 
 [dev-dependencies]
 # Benchmarking finality latency (<1ms targets)
-criterion = "0.5"
+criterion = { workspace = true }
