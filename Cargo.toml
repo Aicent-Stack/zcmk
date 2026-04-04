@@ -1,21 +1,45 @@
 [package]
 name = "zcmk"
-description = "ZCMK: Real-Time Bid/Ask (RTBA) and Zero-Commission Settlement Protocol [RFC-004]"
+description = "ZCMK: Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
+homepage = "https://zcmk.com"
+documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
+keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis"]
+categories = ["financial-services", "algorithms", "network-programming"]
+rust-version = "1.75"
 
 [dependencies]
+# --- Core Organism Linking ---
+# ZCMK relies on the neural spine (RTTP) for atomic bid propagation
 rttp.workspace = true
+# Integration with Brain (RFC-001) for cognitive clearing feedback
+aicent.workspace = true
 
 # --- HFT-Grade Matching Engine ---
+# [PERF] High-frequency lock-free primitives for nanosecond auctions
+crossbeam.workspace = true
 crossbeam-queue.workspace = true
-parking_lot.workspace = true
-once_cell.workspace = true
-serde.workspace = true
+parking_lot.workspace = true   # [PERF] Faster, HFT-grade mutexes
+num-traits = "0.2"             # [FINANCE] Precision math for picotoken arithmetic
+once_cell.workspace = true     # Safe static initialization of auction state
+
+# --- Logic & Telemetry ---
+serde = { workspace = true, features = ["derive"] }
 anyhow.workspace = true
 tokio = { workspace = true, features = ["sync", "rt"] }
-rand.workspace = true
-tracing.workspace = true
+rand.workspace = true          # Chaos-testing the market pressure
+tracing.workspace = true       # Financial telemetry for audit trails
+
+[features]
+default = ["std"]
+std = ["serde/std", "anyhow/std"]
+# [RFC-006] Enable metabolic shunting for Hive-scale rebalancing
+hive-metabolism = []
+
+[dev-dependencies]
+# Benchmarking finality latency (<1ms targets)
+criterion = "0.5"
