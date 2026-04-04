@@ -8,32 +8,30 @@ license.workspace = true
 repository.workspace = true
 homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
-keywords = ["sovereign-ai", "picotoken", "zero-commission", "rtba", "economic-homeostasis"]
+keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis"]
 categories = ["financial-services", "algorithms", "distributed-computing"]
 rust-version = "1.75"
 
 [dependencies]
-# --- Core Organism Linking ---
-# ZCMK is the blood of the organism; it clears value atomically with neural pulses.
+# --- Core Organism Linking (L1 Metabolic Layer) ---
+# ZCMK operates as a pure financial primitive. It consumes neural pulses (RTTP) 
+# to execute atomic clearings. High-level cognitive orchestration (Aicent Brain) 
+# is decoupled to maintain a strict unidirectional dependency graph.
 rttp = { workspace = true }
-aicent = { workspace = true }
 
 # --- HFT-Grade Matching Engine ---
-# [PERF] Lock-free primitives for nanosecond-speed auctions and settlements.
+# [PERF] High-concurrency lock-free queues for nanosecond-speed auctioning
 crossbeam-queue = { workspace = true }
-parking_lot = { workspace = true } # HFT-grade synchronization for auction manifold
-once_cell = { workspace = true }   # Safe static initialization of the market 
-
-# --- Financial Precision ---
-# Precision math for 10^-12 (picotoken) granularity
-num-traits = { version = "0.2", default-features = false }
+parking_lot = { workspace = true }   # [PERF] HFT-grade synchronization primitives
+num-traits = { version = "0.2", default-features = false } # [FINANCE] Precision math for picotoken (10^-12) arithmetic
+once_cell = { workspace = true }     # Safe static initialization of the market manifold
 
 # --- Logic & Telemetry ---
 serde = { workspace = true, features = ["derive"] }
 anyhow = { workspace = true }
 tokio = { workspace = true, features = ["sync", "rt"] }
-rand = { workspace = true }        # Chaos-testing market price discovery
-tracing = { workspace = true }     # Financial audit trails
+rand = { workspace = true }          # Chaos-testing the market pressure
+tracing = { workspace = true }       # Financial telemetry for audit trails
 
 [features]
 default = ["std"]
