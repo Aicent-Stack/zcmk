@@ -6,7 +6,7 @@ version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
-repository = "https://github.com/Aicent-Stack/zcmk"
+repository.workspace = true
 homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
 rust-version.workspace = true
@@ -16,17 +16,17 @@ keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "128-bit-ato
 categories = ["financial-services", "algorithms", "distributed-computing", "network-programming"]
 
 [dependencies]
-# --- Core Organism Linking (L1 Metabolic Layer) ---
-# ZCMK operates as a pure financial primitive. It consumes neural pulses (RTTP) 
-# to execute atomic clearings. High-level cognitive orchestration (Aicent Brain) 
-# is decoupled here to maintain a strict unidirectional dependency graph.
+# --- Core Organism Linking (Unidirectional Dependency Flow) ---
+# ZCMK is the blood of the organism; it clears value atomically with neural pulses (RTTP).
+# 🛡️ THE ARCHITECTURAL LOCK: Decoupled from Brain (aicent) to break cyclic deadlocks.
 rttp = { workspace = true, features = ["std"] }
 
 # --- HFT-Grade Matching Engine (Non-Shrunken) ---
 # Optimized for nanosecond-speed auctions and zero-friction shunting.
-# [PERF] Utilizing lock-free queues and hardware-optimized mutexes.
-crossbeam-queue   = { workspace = true } 
-parking_lot       = { workspace = true } 
+# [PERF] Utilizing lock-free queues and hardware-optimized 128-bit manifolds.
+crossbeam         = { workspace = true } # REQUIRED for AtomicCell<u128> support
+crossbeam-queue   = { workspace = true } # Lock-free shunting for the RTBA manifold
+parking_lot       = { workspace = true } # HFT-grade synchronization primitives
 once_cell         = { workspace = true } # Safe static initialization of the market manifold
 
 # --- Financial Precision & Logic ---
@@ -44,8 +44,7 @@ tracing    = { workspace = true } # Audit-grade financial telemetry logs
 default = ["std"]
 
 # [Standard v1.0] Standard library support for the value metabolism layer.
-# Explicitly re-exporting 'std' for foundational dependencies to ensure 
-# transitive compatibility across the unified workspace.
+# Re-exports 'std' for internal Aicent Stack dependencies to ensure homeostasis.
 std = [
     "serde/std", 
     "anyhow/std", 
