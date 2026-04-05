@@ -6,7 +6,7 @@ version.workspace = true
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
-repository.workspace = true
+repository = "https://github.com/Aicent-Stack/zcmk"
 homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
 rust-version.workspace = true
@@ -16,14 +16,14 @@ keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "128-bit-ato
 categories = ["financial-services", "algorithms", "distributed-computing", "network-programming"]
 
 [dependencies]
-# --- Core Organism Linking (Unidirectional Dependency Flow) ---
-# ZCMK is the blood of the organism; it clears value atomically with neural pulses (RTTP).
-# It provides feedback to the Brain (AICENT) to maintain systemic homeostasis.
-rttp   = { workspace = true, features = ["std"] }
-aicent = { workspace = true, features = ["std"] }
+# --- Core Organism Linking (L1 Metabolic Layer) ---
+# ZCMK operates as a pure financial primitive. It consumes neural pulses (RTTP) 
+# to execute atomic clearings. High-level cognitive orchestration (Aicent Brain) 
+# is decoupled here to maintain a strict unidirectional dependency graph.
+rttp = { workspace = true, features = ["std"] }
 
-# --- HFT-Grade Matching Engine (Real-Time Bid/Ask) ---
-# Optimized for nanosecond-speed auctioning and zero-friction shunting.
+# --- HFT-Grade Matching Engine (Non-Shrunken) ---
+# Optimized for nanosecond-speed auctions and zero-friction shunting.
 # [PERF] Utilizing lock-free queues and hardware-optimized mutexes.
 crossbeam-queue   = { workspace = true } 
 parking_lot       = { workspace = true } 
@@ -44,13 +44,12 @@ tracing    = { workspace = true } # Audit-grade financial telemetry logs
 default = ["std"]
 
 # [Standard v1.0] Standard library support for the value metabolism layer.
-# 🛡️ FIX: Explicitly excluded 'smallvec/std' as the crate lacks this feature.
-# Ensuring all transitive dependencies propagate 'std' correctly.
+# Explicitly re-exporting 'std' for foundational dependencies to ensure 
+# transitive compatibility across the unified workspace.
 std = [
     "serde/std", 
     "anyhow/std", 
-    "rttp/std", 
-    "aicent/std"
+    "rttp/std"
 ]
 
 # [RFC-006] Hive Metabolic Shunting Integration.
@@ -58,5 +57,5 @@ std = [
 hive-metabolism = []
 
 [dev-dependencies]
-# Performance auditing for Reflex-Cycle Finality targets (<1ms).
+# Performance benchmarking for Reflex-Cycle Finality targets (<1ms).
 criterion = { workspace = true, features = ["async_tokio"] }
