@@ -1,7 +1,7 @@
 [package]
 name = "zcmk"
-description = "ZCMK: Real-Time Bid/Ask (RTBA) and Zero-Commission Settlement Protocol [RFC-004]"
-# Inheriting core protocol DNA from the root workspace
+description = "ZCMK: Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]"
+# Inheriting core protocol DNA from the imperial root workspace
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -12,43 +12,51 @@ documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-00
 rust-version.workspace = true
 
 # Keywords and categories for AI-native financial authority
-keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis", "picotoken"]
+keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "128-bit-atomic", "picotoken"]
 categories = ["financial-services", "algorithms", "distributed-computing", "network-programming"]
 
 [dependencies]
 # --- Core Organism Linking (Unidirectional Dependency Flow) ---
-# ZCMK is the blood of the organism, clearing value atomically with neural pulses.
-# Explicitly enable dependencies' 'std' features for full protocol integration.
+# ZCMK is the blood of the organism; it clears value atomically with neural pulses (RTTP).
+# It provides feedback to the Brain (AICENT) to maintain systemic homeostasis.
 rttp   = { workspace = true, features = ["std"] }
 aicent = { workspace = true, features = ["std"] }
 
 # --- HFT-Grade Matching Engine (Real-Time Bid/Ask) ---
 # Optimized for nanosecond-speed auctioning and zero-friction shunting.
-crossbeam-queue   = { workspace = true } # Lock-free shunting for the RTBA manifold
-parking_lot       = { workspace = true } # [PERF] Hardware-optimized mutexes
-once_cell         = { workspace = true } # Safe static initialization of the market grid
+# [PERF] Utilizing lock-free queues and hardware-optimized mutexes.
+crossbeam-queue   = { workspace = true } 
+parking_lot       = { workspace = true } 
+once_cell         = { workspace = true } # Safe static initialization of the market manifold
 
 # --- Financial Precision & Logic ---
 # [RFC-004] Supporting picotoken granularity (10^-12) for micro-inference pricing.
+# Utilizing high-precision arithmetic to ensure economic homeostasis.
 num-traits = { workspace = true }
 serde      = { workspace = true, features = ["derive"] }
 anyhow     = { workspace = true }
-tokio      = { workspace = true, features = ["sync", "rt"] } # Core async primitives
-rand       = { workspace = true }        # For market pressure chaos-testing
-tracing    = { workspace = true }        # Audit-grade financial telemetry logs
+tokio      = { workspace = true, features = ["sync", "rt"] } 
+rand       = { workspace = true } # For market pressure chaos-testing
+tracing    = { workspace = true } # Audit-grade financial telemetry logs
 
 [features]
 # Standard implementation: Optimized for high-throughput clearing environments.
 default = ["std"]
 
-# [Standard v1.0] Standard library support for general-purpose compute.
-# Re-exports 'std' for internal Aicent Stack dependencies to avoid feature conflicts.
-std = ["serde/std", "anyhow/std", "rttp/std", "aicent/std"]
+# [Standard v1.0] Standard library support for the value metabolism layer.
+# 🛡️ FIX: Explicitly excluded 'smallvec/std' as the crate lacks this feature.
+# Ensuring all transitive dependencies propagate 'std' correctly.
+std = [
+    "serde/std", 
+    "anyhow/std", 
+    "rttp/std", 
+    "aicent/std"
+]
 
 # [RFC-006] Hive Metabolic Shunting Integration.
 # Enables collective redistribution of compute credits across the Aicent.net grid.
 hive-metabolism = []
 
 [dev-dependencies]
-# Benchmarking finality latency targets (<1ms end-to-end clearing).
+# Performance auditing for Reflex-Cycle Finality targets (<1ms).
 criterion = { workspace = true, features = ["async_tokio"] }
