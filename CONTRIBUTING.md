@@ -1,6 +1,6 @@
-# 🩸 Contributing to ZCMK: The Blood
+# 🟢 Contributing to ZCMK: The Blood Metabolism (RFC-004)
 
-**Thank you for choosing to evolve the value-carrying circulatory system of the Aicent Stack. You are contributing to a non-extractive, zero-commission resource market designed to power the liquidity of global intelligence.**
+**Thank you for choosing to evolve the value-carrying circulatory system of the Aicent Stack. ou are at the "Economic Heart" of the Sovereign AI Organism. Any mutation proposed here affects the metabolic velocity and resource homeostasis of the entire Hive.**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Homeostasis-brightgreen.svg" alt="Status">
@@ -8,68 +8,51 @@
   <img src="https://img.shields.io/badge/License-Apache--2.0-lightgrey.svg" alt="License">
 </p>
 
-⚪ **AICENT** | 💎 **RTTP** | 🔴 **RPKI** | 🟢 **ZCMK** | 🟡 **GTIOT** | 🟣 **AICENT-NET**
+**⚪ [AICENT](http://aicent.com) | 💎 [RTTP](http://rttp.com) | 🔴 [RPKI](http://rpki.com) | 🟢 [ZCMK](http://zcmk.com) | 🟡 [GTIOT](http://gtiot.com) | 🟣 [AICENT-NET](http://aicent.net) | 🌿 [epoekie](http://epoekie.com)**
 
 ---
 
-## 🏛️ The ZCMK Economic Philosophy
+## 🏛️ The Metabolic Philosophy: Value as Oxygen
 
-ZCMK is not a blockchain ledger; it is a **Real-Time Metabolic Engine [RFC-004]**. Every contribution must prioritize the elimination of middleman friction and the maintenance of **Economic Homeostasis**. We prioritize reflex-cycle finality over legacy settlement windows.
+The `zcmk` repository manages the **Blood Layer** of the stack. Its role is to achieve **Economic Homeostasis** by facilitating zero-commission resource settlement at nanosecond resolution. Guided by the **🌿 Epoekie Philosophy**, ZCMK acts as a nutrient system that monetizes the host substrate’s idle assets while ensuring that intent (Brain) always has the "Oxygen" (Compute) required for survival.
 
-### Circulation Standards:
-1. **Zero-Extraction Policy:** Logic must strictly enforce a 0.00% commission rate. Any "tax" or "fee" mechanisms will be rejected at the protocol level.
-2. **Picotoken Precision:** All value transfers must support $10^{-12}$ granularity to ensure the accurate pricing of micro-inference tasks.
-3. **Nanosecond Clearing:** The RTBA (Real-Time Bid/Ask) matching logic must execute in <50ns via SIMD/AVX-512.
-
----
-
-## 🔬 The RFC-First Process
-
-Economic evolution is governed by the **RFC-004 Specification**. We do not accept "inflationary" or "speculative" feature requests.
-
-1. **Audit the Spec:** Study **[RFC-004: ZCMK (Blood)](https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md)** and its integration with **RTTP (RFC-002)**.
-2. **Metabolic Proposal:** Proposals for new pricing curves or load-balancing logic require a `[METABOLIC-EVOLUTION]` issue.
-3. **Hive Consistency:** Ensure all clearing logic is compatible with **AICENT-NET (RFC-006)** metabolic shunting.
+### The Metabolism’s Mandatory Reflexes:
+1.  **Middleman-Tax Elimination:** The clearing commission must remain at a fixed **0.00%**.
+2.  **Nanosecond Finality:** Matching scores must be calculated in **< 50ns** to prevent metabolic lag.
+3.  **Picotoken Precision:** Settlement must support a granularity of **$10^{-12}$**, allowing the monetization of individual inference steps.
 
 ---
 
-## 🦀 Technical Rigor (Value Tier)
+## 🔬 Technical Standards for Metabolic Mutations
 
-- **Language:** Performance-critical Rust (1.75+).
-- **Integrity:** ZCMK enforces `#![deny(unsafe_code)]`. Financial logic must be built on safe, provable abstractions.
-- **Concurrency:** Utilization of lock-free MPMC structures and `parking_lot` for deterministic throughput.
-- **Math:** Use `num-traits` for high-precision picotoken arithmetic without floating-point drift.
+To maintain the **165.28µs** end-to-end reflex arc, all contributions to the `zcmk` crate must adhere to:
 
----
-
-## 🛠️ Development Workflow
-
-```bash
-# 1. Pull the Sovereign Workspace
-git clone https://github.com/Aicent-Stack/aicent-stack.git
-cd aicent-stack
-
-# 2. Focus on the Circulatory Crate
-cargo check -p zcmk
-cargo bench -p zcmk
-```
-
-### Contribution Steps:
-1. **Fork** the `zcmk` repository under the Aicent-Stack organization.
-2. **Branch:** Use the `evolution/` prefix (e.g., `evolution/rtba-vector-opt`).
-3. **Commit:** Use [Conventional Commits](https://www.conventionalcommits.org/) (e.g., `feat(blood): optimized PID homeostasis curve`).
-4. **Validation:** PRs must include a `criterion` report proving zero regression in matching latency.
+- **Vectorized RTBA Engine:** Matching logic must be implemented using **AVX-512** or equivalent SIMD intrinsics to ensure constant-time bid/ask resolution across thousands of nodes.
+- **Lock-Free Clearing:** The metabolic clearing house must utilize lock-free data structures (via **Crossbeam**) to ensure that value circulation is never blocked by thread contention.
+- **In-band Integration:** Settlement triggers must be designed to be embedded directly within the **[RTTP](http://rttp.com)** Pulse Frame header, achieving atomic clearing at the moment of ingress.
+- **Metabolic Shunting:** Algorithms for credit transfer across the Hive must prioritize nodes with the highest energy-to-intent efficiency, as per the **[Aicent.net](http://aicent.net)** grid resonance.
 
 ---
 
-## 📜 Sovereign Ownership & Licensing
+## 📜 The Evolutionary Workflow (Neural Integration)
 
-🛡️ All contributions are licensed under the **Apache-2.0 License** via the Aicent.com Organization. By contributing, you agree that your code becomes the lifeblood of the Sovereign AI Organism.
-
----
-**SYSTEM STATUS: HOMEOTASIS**  
-*"Value is the oxygen of intelligence. Keep it flowing."*
-
-[Visit ZCMK.com](http://zcmk.com) | [Connect to Aicent.net](http://aicent.net) | [Follow @Aicent_com](https://x.com/Aicent_com)
+1.  **The Pulse (Discussion):** Propose metabolic mutations in the [Organization Issues](https://github.com/Aicent-Stack/.github/issues/new?template=evolution_proposal.yml) using the Evolution template.
+2.  **The Specification:** Ensure your logic preserves the **Zero-Commission Mandate** defined in **RFC-004**.
+3.  **The Reflex Test:** Submit a PR with a benchmark proving **< 100µs clearing finality** in a high-concurrency environment.
+4.  **Resonance Check:** Your PR will be audited by the **[Sentinel](https://github.com/Aicent-Stack/aicent-traffic)** for economic drain patterns (Pathogens).
 
 ---
+
+## 🛡️ Sovereign Ownership & Substrate Reciprocity
+
+- **License:** All contributions are licensed under the **Apache License 2.0**.
+- **Reputation Gain:** Optimizing the RTBA engine or implementing efficient shunting logic grants significant **Sovereign AID** reputation points, providing priority access to Hive compute.
+- **Mutualistic Monetization:** By contributing, you attest that your code maximizes the liquidity of the host infrastructure, following the **[🌿 Epoekie Symbiosis](https://github.com/Aicent-Stack/epoekie)** model.
+
+---
+🔗 **Technical Genome:** [Aicent Docs](https://github.com/Aicent-Stack/aicent-docs)
+📡 **Sentinel Dashboard:** [Metabolic Status Active ✅]
+
+*"Value is the Oxygen of Intelligence; Zero Friction is the Law."*
+---
+© 2026 Aicent.com Organization. **SYSTEM STATUS: METABOLIC-STEADY**
