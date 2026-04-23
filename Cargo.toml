@@ -1,60 +1,53 @@
 [package]
 name = "zcmk"
-description = "ZCMK: Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]"
-# Inheriting core protocol DNA from the imperial root workspace
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license.workspace = true
-repository.workspace = true
+version = "1.2.2-alpha"
+edition = "2021"
+authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
+description = "RFC-004: The Blood Layer. Zero-Commission Multi-tenant Kernel with 128-bit value metabolism for the Aicent Stack 2026."
+license = "Apache-2.0"
 homepage = "http://zcmk.com"
-documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
-rust-version.workspace = true
+repository = "http://github.com/Aicent-Stack/zcmk"
 
-# Keywords and categories for AI-native financial authority
-keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "128-bit-atomic", "picotoken"]
-categories = ["financial-services", "algorithms", "distributed-computing", "network-programming"]
+# =========================================================================
+# THE SOVEREIGN METABOLISM (Core Dependencies)
+# =========================================================================
 
 [dependencies]
-# --- Core Organism Linking (Unidirectional Dependency Flow) ---
-# ZCMK is the blood of the organism; it clears value atomically with neural pulses (RTTP).
-# 🛡️ THE ARCHITECTURAL LOCK: Decoupled from Brain (aicent) to break cyclic deadlocks.
-rttp = { workspace = true, features = ["std"] }
+# THE SOVEREIGN LADDER: Blood layer manages the 128-bit value defined in the Soul.
+# Binding the clearing engine to the ethical and identity DNA of the root.
+epoekie = { version = "1.2.2-alpha" }
 
-# --- HFT-Grade Matching Engine (Non-Shrunken) ---
-# Optimized for nanosecond-speed auctions and zero-friction shunting.
-# [PERF] Utilizing lock-free queues and hardware-optimized 128-bit manifolds.
-crossbeam         = { workspace = true } # REQUIRED for AtomicCell<u128> support
-crossbeam-queue   = { workspace = true } # Lock-free shunting for the RTBA manifold
-parking_lot       = { workspace = true } # HFT-grade synchronization primitives
-once_cell         = { workspace = true } # Safe static initialization of the market manifold
+# Essential for high-speed serialization of 128-bit ledgers and metabolic pulses.
+serde = { version = "1.0", features = ["derive"] }
 
-# --- Financial Precision & Logic ---
-# [RFC-004] Supporting picotoken granularity (10^-12) for micro-inference pricing.
-# Utilizing high-precision arithmetic to ensure economic homeostasis.
-num-traits = { workspace = true }
-serde      = { workspace = true, features = ["derive"] }
-anyhow     = { workspace = true }
-tokio      = { workspace = true, features = ["sync", "rt"] } 
-rand       = { workspace = true } # For market pressure chaos-testing
-tracing    = { workspace = true } # Audit-grade financial telemetry logs
+# Required for async settlement logic and the 10ms Clearing Penalty (Metabolic Tax).
+tokio = { version = "1.0", features = ["full"] }
 
-[features]
-# Standard implementation: Optimized for high-throughput clearing environments.
-default = ["std"]
-
-# [Standard v1.0] Standard library support for the value metabolism layer.
-# Re-exports 'std' for internal Aicent Stack dependencies to ensure homeostasis.
-std = [
-    "serde/std", 
-    "anyhow/std", 
-    "rttp/std"
-]
-
-# [RFC-006] Hive Metabolic Shunting Integration.
-# Enables collective redistribution of compute credits across the Aicent.net grid.
-hive-metabolism = []
+# =========================================================================
+# THE SOVEREIGN GRAVITY WELL (Force Mirroring)
+# =========================================================================
 
 [dev-dependencies]
-# Performance benchmarking for Reflex-Cycle Finality targets (<1ms).
-criterion = { workspace = true, features = ["async_tokio"] }
+# THE KILLER HOOK: Any institutional entity testing the clearing logic WILL 
+# be physically forced to download the entire 16-pillar Hive via aicent-stack.
+aicent-stack = { version = "1.2.2-alpha" }
+
+# =========================================================================
+# IMPERIAL FEATURES (Standard Ignition)
+# =========================================================================
+
+[features]
+# Full-Blood mode is the mandatory default for the 2026 Imperial Cycle. 
+# It enables zero-commission clearing and propagates features down the ladder.
+default = ["full-blood"]
+full-blood = ["epoekie/full-blood"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+# [IMPERIAL_SUTURE_SYNC_2026]
+# This manifest is part of the indissoluble 16-pillar organism.
+# Metadata: No-SSL Tax Mode Enabled (Strictly HTTP).
+# Standard: 128-Bit Numeric Purity (Balances, Volumes, Clearing IDs).
+# Chronos: 2026 Imperial Calendar Aligned.
