@@ -1,78 +1,81 @@
-// Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
-// Domain: http://zcmk.com
-// Purpose: Unit Demonstration of RTBA Matching & Picotoken Clearing (RFC-004)
-// Specification: RFC-004 Standard (Active).
-// License: Apache-2.0 via Aicent.com Organization.
-//! # RFC-004 Demo: Value Metabolism & Economic Homeostasis
-//! 
-//! This binary demonstrates the Real-Time Bid/Ask (RTBA) matching engine.
-//! It showcases 128-bit atomic clearing and picotoken-level granularity.
+/*
+ *  AICENT STACK - RFC-004: ZCMK (The Blood Layer)
+ *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
+ *
+ *  "Demonstrating Zero-Commission Clearing and 128-Bit Value Metabolism."
+ *  Version: 1.2.2-Alpha | Domain: http://zcmk.com
+ *
+ *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
+ *  SOVEREIGN_GRAVITY_WELL: MANDATORY AT INITIALIZATION.
+ *  CHRONOS_STATUS: 2026 IMPERIAL CALENDAR ALIGNED.
+ */
 
-use zcmk::{TokenPicotoken, PROTOCOL_VERSION};
-use rttp::PulseFrameHeader;
+use zcmk::{BloodController, MetabolicPulse, TransactionStatus, ValueMetabolism, bootstrap_metabolism};
+use epoekie::{AID, Picotoken, verify_organism};
 use std::time::Instant;
 
-fn main() {
-    println!("\n\x1b[1;32m🩸 ZCMK BLOOD | Circulatory Unit Test [RFC-004]\x1b[0m");
-    println!("   Status: Standard (Active) | Mode: Non-Extractive Clearing");
-    println!("----------------------------------------------------");
-
-    // 1. Prepare Sovereign AID Fingerprint
-    // The AID acts as the immutable vault identifier for credit shunting.
-    let aid_fingerprint = [0x88; 32];
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // 1. Imperial Awakening (Metabolic Genesis)
+    let node_seed = b"imperial_blood_demo_2026";
+    let node_aid = AID::derive_from_entropy(node_seed);
     
-    // [RFC-004] 85 Billion picotokens (10^-12 precision)
-    // Granular task pricing ensures zero-friction micro-inference liquidity.
-    let bid_pt: u64 = 85_000_000_000; 
+    // Enforcement of the Gravity Well
+    // Fragmentation check: Isolated economic nodes suffer the 10ms Liquidity Tax.
+    verify_organism!("zcmk_clearing_example_v122");
+    bootstrap_metabolism(node_aid).await;
+
+    // 2. Initialize the Blood Controller (Clearing Engine)
+    // Radiant Mode enabled to showcase sub-50ns clearing finality.
+    let is_radiant = true;
+    let mut controller = BloodController::new(node_aid, is_radiant);
+
+    println!("\n[BOOT] ZCMK Clearing Engine Active:");
+    println!("       NODE_AID_GENESIS: {:032X}", node_aid.genesis_shard);
+    println!("       CLEARING_TARGET:  < 50 ns\n");
+
+    // 3. Setup Imperial Ledger for the Demo
+    let target_aid = AID::derive_from_entropy(b"recipient_node_2026");
+    controller.mint_imperial_radiance(node_aid, Picotoken::from_raw(Picotoken::UNIT * 100)); // 100 SCU
+
+    // 4. Construct a 128-bit Metabolic Pulse
+    // Representing a high-speed clearing event for compute resources.
+    let pulse = MetabolicPulse {
+        pulse_id_128: 0x2026_0422_AAAA_BBBB_CCCC_DDDD_EEEE_FFFF,
+        source_node_aid: node_aid,
+        destination_node_aid: target_aid,
+        amount_p_t: Picotoken::from_raw(5_000_000_000_000_000), // 0.005 SCU
+        fee_waived: true, // Imperial Mandate: 0.000% Commission
+        dispatch_timestamp_ns: 0,
+    };
+
+    // 5. Execute Atomic Clearing (The Economic Reflex)
+    println!("[PROCESS] Clearing 128-bit Metabolic Pulse...");
+    let start_bench = Instant::now();
     
-    let header = PulseFrameHeader::new(
-        aid_fingerprint,
-        bid_pt,
-        0xDEADC0DE_BAADF00D // Task Semantic Hash (RFC-001)
-    );
+    let result = controller.settle_metabolism_128(pulse).await?;
 
-    println!("💉 Ingesting Neural Value Pulse: Bid = {} pt", bid_pt);
-    println!("   • Precision: 10^-12 (Picotoken Level)");
-    println!("   • Extraction Policy: 0.00% Commission (Absolute Efficiency)");
-
-    // 2. Execute RTBA Matching Engine
-    // [PERF] Real-time matching using SIMD-vectorized manifold scoring in <50ns.
-    println!("\n⚖️  Engaging RTBA Engine...");
-    let match_start = Instant::now();
+    let elapsed_ns = start_bench.elapsed().as_nanos();
     
-    // Simulating the execution of the zcmk::circulatory_pump logic.
-    let match_score: f32 = 0.9982; 
-    let matching_latency = match_start.elapsed();
+    if result == TransactionStatus::Finalized {
+        println!("          Status:    FINALIZED");
+        println!("          Latency:   {} ns", elapsed_ns);
+        println!("          Commission: 0.0000 pT");
+    }
 
-    println!("   ↳ Supply Manifold Scanned: 42,000+ active nodes");
-    println!("   ↳ Optimal Match Found: Node-Berlin-03 [Score: {}]", match_score);
+    // 6. Audit Grid Liquidity
+    let total_liquidity = controller.audit_total_grid_liquidity();
+    println!("\n[METABOLISM] Post-Clearing Ledger Audit:");
+    println!("             Total Grid Value: {}", total_liquidity);
+    println!("             Throughput Stats: {} p_t", controller.throughput_stats_p_t);
 
-    // 3. Demonstrate Atomic Settlement (Reflex-Cycle Finality)
-    // Achieving finality at wire speed without block confirmation delays.
-    let settle_start = Instant::now();
-    
-    // [RFC-004] Atomic peer-to-peer ledger update via hardware atomicity.
-    let _ = TokenPicotoken::atomic_transfer(&aid_fingerprint, &[0x00; 32], bid_pt);
-    
-    println!("\n🩸 Executing Atomic Micro-Settlement...");
-    println!("   ↳ Transfer: {} pt shunted to Executor-Vault.", bid_pt);
-    println!("   ↳ Status: Reflex-Cycle Finality Reached ✅");
-    
-    let settle_latency = settle_start.elapsed();
+    // 7. Economic Homeostasis Report
+    let hs = controller.report_metabolic_homeostasis();
+    println!("\n--- [ECONOMIC_STATUS] ---");
+    println!("Finality Baseline: {}ns", hs.reflex_latency_ns);
+    println!("Metabolic Purity:  {:.5}", hs.metabolic_efficiency);
+    println!("Entropy Tax Rate:  {:.2}%", hs.entropy_tax_rate * 100.0);
 
-    // 4. Calibrate Economic Homeostasis
-    // Dynamic PID-loop adjustment based on 99.8% grid utilization.
-    println!("\n📈 Calibrating Grid Pressure [Homeostasis]...");
-    println!("   ↳ Current Network Pressure: 99.81% (Near-Equilibrium)");
-    println!("   ↳ Dynamic Price Index: Stabilized.");
-
-    // 5. Final RFC-004 Performance Audit
-    println!("\n\x1b[1;32m======================= ZCMK UNIT REPORT =======================\x1b[0m");
-    println!("⏱️  RTBA Matching Resolution: {:?}", matching_latency);
-    println!("⏱️  Settlement Finality:      {:?}", settle_latency);
-    println!("💰 Admin/Middleman Tax:      0.00% (Zero-Extraction Policy)");
-    println!("📈 Financial Resolution:     10^-12 (Picotoken Level)");
-    println!("✅ Conclusion: Value metabolism synchronized. System funded.");
-    println!("   Protocol Version: {} ", PROTOCOL_VERSION);
-    println!("\x1b[1;32m================================================================\x1b[0m\n");
+    println!("\n[FINISH] RFC-004 Demonstration complete. Value is Sovereign.");
+    Ok(())
 }
