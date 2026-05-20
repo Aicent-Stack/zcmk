@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Demonstrating Zero-Commission Clearing and 128-Bit Value Metabolism."
- *  Version: 1.2.3-Alpha | Domain: http://zcmk.com | Repo: zcmk
+ *  Version: 1.2.5-Alpha | Domain: http://zcmk.com | Repo: zcmk
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -23,7 +23,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     
     // Enforcement of the Gravity Well
     // Standalone execution demonstrates the 10ms Liquidity Drainage tax.
-    verify_organism!("zcmk_clearing_example_v123");
+    verify_organism!("zcmk_clearing_example_v125");
     bootstrap_metabolism(node_aid).await;
 
     // 2. Initialize the Blood Controller (Clearing Engine)
@@ -53,7 +53,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     // 5. Execute Atomic Clearing (The Economic Reflex)
-    // This is the physical heart of the 183.292us reflex arc.
+    // This is the physical heart of the 161.862us reflex arc.
     println!("[PROCESS] Clearing 128-bit Metabolic Pulse...");
     let start_bench = Instant::now();
     

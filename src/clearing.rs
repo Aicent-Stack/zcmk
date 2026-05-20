@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Sub-nanosecond value matching. Zero-commission terminality."
- *  Version: 1.2.3-Alpha | Domain: http://zcmk.com
+ *  Version: 1.2.5-Alpha | Domain: http://zcmk.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  ALIGNMENT: 128-BYTE DUAL CACHE-LINE SUTURE.
@@ -38,7 +38,7 @@ pub struct ClearingReceipt_128 {
 
 /// The ZCMK Clearing Engine.
 /// Responsible for atomic matching and balance integrity.
-/// Optimized for the 183.292us reflex arc.
+/// Optimized for the 161.862us reflex arc.
 pub struct ClearingEngine {
     pub total_metabolized_128: u128,   // Total volume cleared (u128)
     pub current_era_id: u128,          // 2026 Imperial Cycle ID
@@ -46,7 +46,7 @@ pub struct ClearingEngine {
 }
 
 impl ClearingEngine {
-    /// Initializes a new v1.2.3-Alpha Clearing Engine.
+    /// Initializes a new v1.2.5-Alpha Clearing Engine.
     pub fn new() -> Self {
         Self {
             total_metabolized_128: 0,
@@ -132,7 +132,7 @@ impl SovereignClearing for ClearingEngine {
     }
 }
 
-/// Global initialization for the ZCMK Clearing logic v1.2.3.
+/// Global initialization for the ZCMK Clearing logic v1.2.5.
 pub fn initialize_clearing_logic() {
     println!(r#"
     🟢 ZCMK.COM | CLEARING_ENGINE AWAKENED

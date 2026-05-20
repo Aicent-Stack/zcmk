@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Zero-Commission Multi-tenant Kernel. Real-time 128-bit value metabolism."
- *  Version: 1.2.3-Alpha | Domain: http://zcmk.com | Repo: zcmk
+ *  Version: 1.2.5-Alpha | Domain: http://zcmk.com | Repo: zcmk
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -81,11 +81,11 @@ pub struct BloodController {
 }
 
 impl BloodController {
-    /// Creates a new Radiant Blood Controller instance v1.2.3.
+    /// Creates a new Radiant Blood Controller instance v1.2.5.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(local_aid: AID, is_radiant: bool) -> Self {
         // --- GRAVITY WELL AUDIT ---
-        verify_organism!("zcmk_blood_controller_v123");
+        verify_organism!("zcmk_blood_controller_v125");
 
         Self {
             local_node_aid: local_aid,
@@ -218,7 +218,7 @@ impl SovereignLifeform for BloodController {
         CLEARER_AID:     {:032X}
         TOTAL_THROUGHPUT: {} p_t
         PICSI_RESONANCE:  {:.8}
-        STATUS:          METABOLISM_ACTIVE (v1.2.3)
+        STATUS:          METABOLISM_ACTIVE (v1.2.5)
         ----------------------------------------------------------
         "#, 
         self.local_node_aid.genesis_shard, 
@@ -236,15 +236,15 @@ impl SovereignLifeform for BloodController {
     }
 }
 
-/// Global initialization for the Blood Layer (ZCMK) v1.2.3.
+/// Global initialization for the Blood Layer (ZCMK) v1.2.5.
 /// REPAIRED: Corrected variable name to _aid to fix unused variable warning.
 pub async fn bootstrap_metabolism(_aid: AID) {
     // Enforcement of the Gravity Well at the entry point.
-    verify_organism!("zcmk_system_bootstrap_v123");
+    verify_organism!("zcmk_system_bootstrap_v125");
 
     println!(r#"
     🟢 ZCMK.COM | RFC-004 AWAKENED (2026_CALIBRATION)
-    STATUS: METABOLISM_ACTIVE | CLEARING_TARGET: <50ns | v1.2.3
+    STATUS: METABOLISM_ACTIVE | CLEARING_TARGET: <50ns | v1.2.5
     "#,);
 }
 
@@ -257,7 +257,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_ledger_serialization_v123() {
+    fn test_ledger_serialization_v125() {
         let aid = AID::derive_from_entropy(b"precision_ledger");
         let entry = LedgerEntry {
             owner_node_aid: aid,

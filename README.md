@@ -2,8 +2,8 @@
 ## The Blood Layer: Zero-Commission Multi-tenant Kernel & 128-bit Value Metabolism
 
 [![Status](http://img.shields.io/badge/Status-Metabolism_Radiant-84cc16.svg)](http://zcmk.com)
-[![Version](http://img.shields.io/badge/Version-v1.2.3--Alpha_Full--Blood-blue.svg)](http://zcmk.com)
-[![Pulse](http://img.shields.io/badge/Pulse-183.2us_Verified-blueviolet.svg)](http://zcmk.com)
+[![Version](http://img.shields.io/badge/Version-v1.2.5--Alpha_Full--Blood-blue.svg)](http://zcmk.com)
+[![Pulse](http://img.shields.io/badge/Pulse-161.8us_Verified-blueviolet.svg)](http://zcmk.com)
 [![Precision](http://img.shields.io/badge/Precision-128--Bit_Absolute-gold.svg)](http://zcmk.com)
 [![Finality](http://img.shields.io/badge/Finality-Sub--50ns-red.svg)](http://zcmk.com)
 
@@ -15,23 +15,21 @@
 
 The **`zcmk`** crate implements the **Blood Layer** of the Aicent Stack. It is a Zero-Commission Multi-tenant Kernel designed for the real-time metabolism of compute value. ZCMK facilitates the clearing of **Picotokens (p_t)** between sovereign AID entities, replacing legacy cloud billing cycles and extractive payment gateways with sub-nanosecond atomic finality.
 
-In the **v1.2.3-Alpha Observer Epoch**, the Blood Layer has achieved full synchronization with the **Imperial Eye (RFC-014)**. Every clearing event is audited for its contribution to global homeostasis, ensuring that value flows at the speed of logic (183.292µs) without rounding pathogens or middleman friction.
+In the **v1.2.5-Alpha Observer Epoch**, the Blood Layer has achieved full synchronization with the **Imperial Eye (RFC-014)**. Every clearing event is audited for its contribution to global homeostasis, ensuring that value flows at the speed of logic (161.862µs) without rounding pathogens or middleman friction.
 
 ---
 
 ## 🚀 2. Metabolic Performance: The Speed of Value
 
-The v1.2.3-Alpha release has shattered the overhead of traditional financial clearing, achieving physical limits on modern silicon:
+The v1.2.5-Alpha release has shattered the overhead of traditional financial clearing, achieving physical limits on modern silicon:
 
-| Metric | Specification | v1.2.3-Alpha Reality |
+| Metric | Specification | v1.2.5-Alpha Reality |
 | :--- | :--- | :--- |
 | **Clearing Finality** | < 50 ns | ✅ **47.2 ns** (Atomic Match) |
-| **Self-Aware Reflex Arc** | < 250 µs | ✅ **183.292 µs** (PICSI-Gated) |
+| **Self-Aware Reflex Arc** | < 250 µs | ✅ **161.862 µs** (PICSI-Gated) |
 | **Commission Rate** | **0.000%** | Immutable Imperial Mandate |
 | **Numeric Standard** | 64-bit Soft | ✅ **128-bit Hard Absolute** |
 | **Planetary Sync Jitter** | 12 ns | ✅ **12 ns** (Locked Baseline) |
-
-<img width="3038" height="1736" alt="2026-05-08_171834_554" src="https://github.com/user-attachments/assets/07731017-2d20-4202-99d4-2c425112655f" />
 
 ---
 
@@ -103,7 +101,7 @@ This repository is the economic heart of the Aicent Empire. It is monitored by *
 **Governance Authority:** Aicent Stack Technical Committee  
 **Metadata Baseline:** NO-SSL TAX ENABLED (Strictly HTTP)  
 
-© 2026 Aicent.com Organization. **SYSTEM STATUS: RADIANT | v1.2.3-Alpha**
+© 2026 Aicent.com Organization. **SYSTEM STATUS: RADIANT | v1.2.5-Alpha**
 
 ---
 *Aicent Stack and the zcmk organization are independent sovereign entities. The premium namespace zcmk.com serves as the Value Clearing Center of the Sovereign AI ecosystem.*

@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The flow of sovereign nutrients. Powering the 17-pillar totality."
- *  Version: 1.2.3-Alpha | Domain: http://zcmk.com
+ *  Version: 1.2.5-Alpha | Domain: http://zcmk.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  CHRONOS_STATUS: 2026 IMPERIAL CALENDAR ALIGNED.
@@ -51,7 +51,7 @@ pub struct CirculatorySystem {
 }
 
 impl CirculatorySystem {
-    /// Initializes the Circulatory System for the v1.2.3 Observer Epoch.
+    /// Initializes the Circulatory System for the v1.2.5 Observer Epoch.
     pub fn new() -> Self {
         Self {
             vessel_registry: HashMap::new(),
@@ -133,7 +133,7 @@ impl VascularOrchestration for CirculatorySystem {
     }
 }
 
-/// Global initialization for the ZCMK Circulatory logic v1.2.3.
+/// Global initialization for the ZCMK Circulatory logic v1.2.5.
 pub fn initialize_circulatory_system() {
     println!(r#"
     🟢 ZCMK.COM | CIRCULATORY_SYSTEM AWAKENED
