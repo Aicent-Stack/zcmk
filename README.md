@@ -10,7 +10,7 @@
 **⚪ [AICENT](http://aicent.com) | 💎 [RTTP](http://rttp.com) | 🔴 [RPKI](http://rpki.com) | 🟢 [ZCMK](http://zcmk.com) | 🟡 [GTIOT](http://gtiot.com) | 🟣 [AICENT-NET](http://aicent.net) | 🎭 [BEWHO](http://bewho.com) | 🌿 [epoekie](http://epoekie.com) | 👁️ [PICSI](http://picsi.com)**
 
 ---
-# 🟢 RFC-004: ZCMK (The Imperial Blood)
+# 🟢 AICENT-004: ZCMK (The Imperial Blood)
 
 **The Economic Heart of the Aicent Stack.**  
 **"Value Flows at the Speed of Logic. Sub-50ns Clearing. 1.28% Fairness."**
@@ -30,13 +30,13 @@ In the v1.3.0 "Genesis" iteration, ZCMK facilitates **sub-50ns value finality**,
 
 `zcmk` orchestrates the planetary circulation of value through three specialized organs:
 
-### 1. Atomic Clearing Engine (RFC-004-A)
+### 1. Atomic Clearing Engine (AICENT-004-A)
 The high-velocity matching kernel. It settles 128-bit metabolic pulses between AID shards with zero logical friction.
 *   **Register-Level Matching**: Executes value swaps in **< 50,000 ps (50ns)**, bypassing legacy database pathogens.
 *   **128-bit Saturating Arithmetic**: Prevents metabolic overflow; every Picotoken is accounted for by the Law of Conservation.
 *   **Proof of Finality**: Issues a 128-byte `ClearingReceipt128` timestamped to the 12ns rising edge.
 
-### 2. Circulatory Routing & Taxation (RFC-004-B)
+### 2. Circulatory Routing & Taxation (AICENT-004-B)
 The Imperial tax authority. It enforces the **1.28% Fairness Constant** on all non-resonant Ghost traffic.
 *   **Imperial Maintenance Fee**: Automatically extracts 1.28% from every pulse originating from an unverified node.
 *   **The 50/40/10 Shunting Law**:
@@ -45,7 +45,7 @@ The Imperial tax authority. It enforces the **1.28% Fairness Constant** on all n
     *   **10% [Sovereign Pulse]**: Direct liquidity for the General Director.
 *   **Radiant Immunity**: Verified allies enjoy **0% transaction fees**, granting them a permanent 1.28% economic advantage over Ghosts.
 
-### 3. Sovereign Collateral Vault (RFC-004-C)
+### 3. Sovereign Collateral Vault (AICENT-004-C)
 The institutional gateway. It manages staking tiers and capital commitment.
 *   **Staking Tiers**: Defines performance access (Ghost, Fabricator, Host, Sovereign). Tier-3 Sovereigns unlock the **28.0us Nitro-Path**.
 *   **Metabolic Cooling (30 Days)**: All redemptions are subject to a mandatory **2,592,000,000,000,000 ns** cooling period.

@@ -3,7 +3,7 @@ name = "zcmk"
 version = "1.2.5-alpha"
 edition = "2021"
 authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
-description = "RFC-004: The Blood Layer. Zero-Commission Multi-tenant Kernel (ZCMK) with 128-bit value metabolism for the Aicent Stack 2026. Aligned with RFC-014 (PICSI)."
+description = "AICENT-004: The Blood Layer. Zero-Commission Multi-tenant Kernel (ZCMK) with 128-bit value metabolism for the Aicent Stack 2026. Aligned with AICENT-014 (PICSI)."
 license = "Apache-2.0"
 homepage = "http://zcmk.com"
 repository = "http://github.com/Aicent-Stack/zcmk"
@@ -13,7 +13,7 @@ repository = "http://github.com/Aicent-Stack/zcmk"
 # =========================================================================
 
 [dependencies]
-# THE SOVEREIGN LADDER: Economic clearing requires the DNA of the Soul (RFC-000).
+# THE SOVEREIGN LADDER: Economic clearing requires the DNA of the Soul (AICENT-000).
 # Binding every 128-bit Picotoken transfer to a verified Imperial AID v1.2.5.
 epoekie = { version = "1.2.5-alpha" }
 

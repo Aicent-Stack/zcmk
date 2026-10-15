@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-004: ZCMK Atomic Clearing Engine
+ *  AICENT STACK - AICENT-004: ZCMK Atomic Clearing Engine
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Sub-nanosecond value matching. Zero-commission terminality."
@@ -17,7 +17,7 @@ use std::time::Instant;
 // 1. CLEARING DATA STRUCTURES (The Economic Receipt)
 // =========================================================================
 
-/// RFC-004: ClearingReceipt_128
+/// AICENT-004: ClearingReceipt_128
 /// The immutable proof of an atomic value transfer in the 2026 Grid.
 /// Aligned to 128-byte boundary for zero-latency cache-local auditing.
 #[repr(C, align(128))]
@@ -28,8 +28,8 @@ pub struct ClearingReceipt_128 {
     pub destination_aid: AID,
     pub amount_p_t: Picotoken,         // 128-bit absolute value
     pub settlement_ns: u128,           // Nanosecond finality timestamp
-    pub picsi_resonance_f64: f64,      // RFC-014 Vision score
-    pub integrity_hash: [u8; 16],      // RPKI Tensor Watermark (RFC-003)
+    pub picsi_resonance_f64: f64,      // AICENT-014 Vision score
+    pub integrity_hash: [u8; 16],      // RPKI Tensor Watermark (AICENT-003)
 }
 
 // =========================================================================
@@ -55,7 +55,7 @@ impl ClearingEngine {
         }
     }
 
-    /// [RFC-004] Atomic Match 128.
+    /// [AICENT-004] Atomic Match 128.
     /// Executes the final value transfer in < 50ns logic-time.
     /// This is the point where compute power is converted into sovereign wealth.
     #[inline(always)]
@@ -100,7 +100,7 @@ impl ClearingEngine {
         })
     }
 
-    /// RFC-004: Audit Clearing Finality.
+    /// AICENT-004: Audit Clearing Finality.
     /// Verifies the 47.2ns logic target against current CPU jitter.
     pub fn audit_finality_ns(&self, start: Instant) -> u128 {
         start.elapsed().as_nanos() as u128
@@ -128,7 +128,7 @@ impl SovereignClearing for ClearingEngine {
 
     fn trigger_liquidity_flush(&mut self) {
         println!("[ZCMK] 2026_ADMIN: Executing global liquidity homeostasis flush.");
-        // Shunted to MOLOON RFC-012 for state persistence
+        // Shunted to MOLOON AICENT-012 for state persistence
     }
 }
 

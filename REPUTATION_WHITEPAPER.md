@@ -1,6 +1,6 @@
 [![Organism Vitality & Protocol Audit](https://github.com/Aicent-Stack/aicent-stack/actions/workflows/rust-ci.yml/badge.svg)](https://github.com/Aicent-Stack/aicent-stack/actions/workflows/rust-ci.yml)
 
-[![RFC](https://img.shields.io/badge/RFC-004-green.svg)](https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md)
+[![RFC](https://img.shields.io/badge/AICENT-004-green.svg)](https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/AICENT-004-ZCMK-BLOOD.md)
 [![Status](https://img.shields.io/badge/Status-Homeostasis-brightgreen.svg)](#)
 [![Org](https://img.shields.io/badge/Org-Aicent.com-blue.svg)](http://zcmk.com)
 
@@ -38,7 +38,7 @@ A node’s reputation begins with its ability to maintain **Kinetic Resonance**.
 Aligned with the **[🌿 Epoekie Philosophy](https://github.com/Aicent-Stack/epoekie)**, the SRS rewards nodes that demonstrate **Substrate Mastery**. Nodes that optimize the host infrastructure’s energy consumption receive a **Sovereign Dividend**—increasing their metabolic yield by up to 34.2%.
 
 ### 3.3 Immune Integrity (The RPKI Tier)
-Identity is the root of value. A single **RFC-003** violation (tampered tensor watermark) results in an immediate **Reputation Blackout**. Recovery requires a full RPKI key-rotation and a 145-cycle re-validation period.
+Identity is the root of value. A single **AICENT-003** violation (tampered tensor watermark) results in an immediate **Reputation Blackout**. Recovery requires a full RPKI key-rotation and a 145-cycle re-validation period.
 
 ---
 

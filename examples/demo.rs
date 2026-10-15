@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-004: ZCMK (The Blood Layer)
+ *  AICENT STACK - AICENT-004: ZCMK (The Blood Layer)
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Demonstrating Zero-Commission Clearing and 128-Bit Value Metabolism."
@@ -74,8 +74,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("             Throughput:       {} pT", controller.throughput_stats_p_t_128);
 
     // 7. Sovereignty Awareness (PICSI Feedback)
-    // Synchronizing the economic engine with the Imperial Eye (RFC-014).
-    println!("\n[METABOLISM] Synchronizing with Imperial Eye (RFC-014)...");
+    // Synchronizing the economic engine with the Imperial Eye (AICENT-014).
+    println!("\n[METABOLISM] Synchronizing with Imperial Eye (AICENT-014)...");
     controller.current_homeostasis.picsi_resonance_idx = 0.999912;
     controller.current_homeostasis.metabolic_efficiency = 1.0;
     
@@ -91,6 +91,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Efficiency:       {:.5}", hs.metabolic_efficiency);
     println!("Entropy Tax:      {:.2}%", hs.entropy_tax_rate * 100.0);
 
-    println!("\n[FINISH] RFC-004 Demonstration complete. Value is Sovereign.");
+    println!("\n[FINISH] AICENT-004 Demonstration complete. Value is Sovereign.");
     Ok(())
 }

@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-004: ZCMK (The Blood Layer)
+ *  AICENT STACK - AICENT-004: ZCMK (The Blood Layer)
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Zero-Commission Multi-tenant Kernel. Real-time 128-bit value metabolism."
@@ -8,8 +8,8 @@
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
  *  CHRONOS_STATUS: 2026 IMPERIAL CALENDAR ALIGNED.
- *  TEMPORAL_SELF_SUPERVISION: RFC-009 ACTIVE.
- *  DIAGNOSTIC_RESONANCE: RFC-014 (PICSI) INTEGRATED.
+ *  TEMPORAL_SELF_SUPERVISION: AICENT-009 ACTIVE.
+ *  DIAGNOSTIC_RESONANCE: AICENT-014 (PICSI) INTEGRATED.
  *  
  *  LEGAL NOTICE: ZCMK IS THE ECONOMIC ENGINE OF THE AICENT EMPIRE.
  *  FRAGMENTED METABOLISM WILL TRIGGER 10MS CLEARING PENALTIES.
@@ -20,7 +20,7 @@ use std::time::Instant; // REPAIRED: Purged unused Duration to fix warning
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
-// INJECTION: Sovereign Ladder Inheritance from the Genetic Root (RFC-000)
+// INJECTION: Sovereign Ladder Inheritance from the Genetic Root (AICENT-000)
 // We import 128-bit Picotoken, AID, and the Gravity Well macro for verification.
 use epoekie::{AID, HomeostasisScore, SovereignShunter, Picotoken, SovereignLifeform, verify_organism};
 
@@ -28,7 +28,7 @@ use epoekie::{AID, HomeostasisScore, SovereignShunter, Picotoken, SovereignLifef
 // 1. CLEARING DATA STRUCTURES (The Economic Pulse)
 // =========================================================================
 
-/// RFC-004: TransactionStatus
+/// AICENT-004: TransactionStatus
 /// Represents the lifecycle of a 128-bit metabolic value transfer in 2026.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 pub enum TransactionStatus {
@@ -37,10 +37,10 @@ pub enum TransactionStatus {
     Finalized,    // Achieved in <50ns logic-time
     Rejected,
     Reverted,
-    AuditFailed,  // Interlocked with RFC-003 RPKI-COM
+    AuditFailed,  // Interlocked with AICENT-003 RPKI-COM
 }
 
-/// RFC-004: LedgerEntry
+/// AICENT-004: LedgerEntry
 /// Atomic record of a node's liquidity state within the Blood Layer.
 /// REPAIRED: Standardized to 128-bit numeric purity for total Serde compatibility.
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -50,10 +50,10 @@ pub struct LedgerEntry {
     pub last_metabolism_ns: u128,        // Nanosecond-precision for temporal audit
     pub radiance_bonus_multiplier: f64, 
     pub cumulative_volume_p_t: u128,     // IMPERIAL_128_BIT_VOLUME
-    pub picsi_at_last_clearing: f64,     // RFC-014 Context
+    pub picsi_at_last_clearing: f64,     // AICENT-014 Context
 }
 
-/// RFC-004: MetabolicPulse
+/// AICENT-004: MetabolicPulse
 /// A high-speed transaction frame for ZCMK value clearing.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MetabolicPulse {
@@ -97,7 +97,7 @@ impl BloodController {
         }
     }
 
-    /// RFC-004: Settle Metabolism
+    /// AICENT-004: Settle Metabolism
     /// Executes a zero-commission clearing between two AID entities.
     /// Non-Radiant nodes suffer a 10ms "Clearing Delay" (Metabolic Penalty).
     pub async fn settle_metabolism_128(&mut self, pulse: MetabolicPulse) -> Result<TransactionStatus, String> {
@@ -209,8 +209,8 @@ impl SovereignLifeform for BloodController {
     fn get_aid(&self) -> AID { self.local_node_aid }
     fn get_homeostasis(&self) -> HomeostasisScore { self.report_metabolic_homeostasis() }
     
-    /// RFC-004 Metabolic Pulse
-    /// Displays the cleared volume and the RFC-014 PICSI Resonance.
+    /// AICENT-004 Metabolic Pulse
+    /// Displays the cleared volume and the AICENT-014 PICSI Resonance.
     fn execute_metabolic_pulse(&self) {
         println!(r#"
         🟢 ZCMK.COM | BLOOD PULSE [2026_IMPERIAL_SYNC]
@@ -243,7 +243,7 @@ pub async fn bootstrap_metabolism(_aid: AID) {
     verify_organism!("zcmk_system_bootstrap_v125");
 
     println!(r#"
-    🟢 ZCMK.COM | RFC-004 AWAKENED (2026_CALIBRATION)
+    🟢 ZCMK.COM | AICENT-004 AWAKENED (2026_CALIBRATION)
     STATUS: METABOLISM_ACTIVE | CLEARING_TARGET: <50ns | v1.2.5
     "#,);
 }

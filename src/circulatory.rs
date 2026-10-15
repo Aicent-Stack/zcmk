@@ -1,5 +1,5 @@
 /*
- *  AICENT STACK - RFC-004: ZCMK Metabolic Circulatory System
+ *  AICENT STACK - AICENT-004: ZCMK Metabolic Circulatory System
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The flow of sovereign nutrients. Powering the 17-pillar totality."
@@ -17,7 +17,7 @@ use std::collections::HashMap;
 // 1. CIRCULATORY DATA STRUCTURES (The Vascular Map)
 // =========================================================================
 
-/// RFC-004: MetabolicVessel
+/// AICENT-004: MetabolicVessel
 /// Represents a high-velocity value-channel between the Blood Layer and an RFC pillar.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MetabolicVessel_128 {
@@ -27,7 +27,7 @@ pub struct MetabolicVessel_128 {
     pub last_heartbeat_ns: u128,       // 12ns jitter-aligned timestamp
 }
 
-/// RFC-004: DividendRouting
+/// AICENT-004: DividendRouting
 /// Defines the automated sharding of the 1.28% Ghost Maintenance Fee.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RevenueRouting_128 {
@@ -65,7 +65,7 @@ impl CirculatorySystem {
         }
     }
 
-    /// RFC-004: Pulse Liquidity.
+    /// AICENT-004: Pulse Liquidity.
     /// Distributes 128-bit nutrients to a specific Imperial Pillar.
     /// [PERF] Optimized for 1.2kHz synchronous deployment.
     pub fn pulse_liquidity_128(&mut self, pillar_idx: u128, amount: Picotoken) {
@@ -84,7 +84,7 @@ impl CirculatorySystem {
         println!("[ZCMK-CIRCULATORY] Nutrient pulse shunted to RFC-{:03}.", pillar_idx);
     }
 
-    /// RFC-004: Process Ghost Maintenance Fee.
+    /// AICENT-004: Process Ghost Maintenance Fee.
     /// Automatically shards the 1.28% tax into the triple sovereign pools.
     pub fn route_ghost_maintenance_128(&mut self, gross_fee: Picotoken) {
         let raw_fee = gross_fee.total_value();
