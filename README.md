@@ -7,7 +7,7 @@
 
 > **"This is not infrastructure for intelligence. This is intelligence itself."**
 
-**⚪ [AICENT](http://aicent.com) | 💎 [RTTP](http://rttp.com) | 🔴 [RPKI](http://rpki.com) | 🟢 [ZCMK](http://zcmk.com) | 🟡 [GTIOT](http://gtiot.com) | 🟣 [AICENT-NET](http://aicent.net) | 🎭 [BEWHO](http://bewho.com) | 🌿 [epoekie](http://epoekie.com) | 👁️ [PICSI](http://picsi.com)**
+**⚪ [AICENT](http://aicent.com) | 💎 [RTTP](http://rttp.com) | 🔴 [RPKI](http://rpki.com) | 🟢 [ZCMK](http://zcmk.com) | 🟡 [GTIOT®](http://gtiot.com) | 🟣 [AICENT-NET](http://aicent.net) | 🎭 [BEWHO®](http://bewho.com) | 🌿 [epoekie](http://epoekie.com) | 👁️ [PICSI®](http://picsi.com)**
 
 ---
 # 🟢 AICENT-004: ZCMK (The Imperial Blood)
@@ -41,7 +41,7 @@ The Imperial tax authority. It enforces the **1.28% Fairness Constant** on all n
 *   **Imperial Maintenance Fee**: Automatically extracts 1.28% from every pulse originating from an unverified node.
 *   **The 50/40/10 Shunting Law**:
     *   **50% [Imperial Reserve]**: Secured for principal protection of stakers.
-    *   **40% [Somatic Fund]**: Directed to **GTIOT** for robotic hardware procurement.
+    *   **40% [Somatic Fund]**: Directed to **GTIOT®** for robotic hardware procurement.
     *   **10% [Sovereign Pulse]**: Direct liquidity for the General Director.
 *   **Radiant Immunity**: Verified allies enjoy **0% transaction fees**, granting them a permanent 1.28% economic advantage over Ghosts.
 
